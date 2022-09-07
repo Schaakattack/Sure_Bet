@@ -1,13 +1,10 @@
-Useful GIT commands
+Useful basic GIT commands
 ------------------------------------------------------------
 
 -- clone the remote git repo -- 
 git clone https://github.com/Schaakattack/Sure_Bet.git
 
--- I renamed the remote repo, use this command to fix your local repo --
-git remote set-url origin git@github.com:warp-9000/algo-trader.git
-
--- this updates your local copy of the remote repo so they are in sync -- 
+-- this updates your local copy of the remote repo so they are in sync -- *Optional*
     ** this WILL NOT cause merge conflicts **
 git fetch
 
@@ -23,11 +20,74 @@ git add .
 
 -- commit any staged files --
 git commit
-git commit -m 'a_summary' -m 'a_message_description'
+git commit -m 'a_message_summary' 
 
 -- publish your changes to the remote repo --
 git push 
 
 ------------------------------------------------------------
 
+GitHub 101 -Detailed GIT commands
+Learning GitHub Essentials
+-------------------------------------------------------------
+What is GitHub?
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. GitHub provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for personal, enterprise and open source project.
 
+Creating a GitHub Profile
+Don’t have a GitHub account yet? No problem. Create one here by clicking on the ‘Sign up’ button located in the right top corner. You will be asked to define a username, email address, new password and to verify your account.
+
+Creating a New Repository
+Whenever your are interested in starting a brand new project, you will want to store your codes and relevant files within a new repository.
+
+--Step 1: on GitHub top bar, click on the ‘+’ sign located in the top right corner; select ‘New repository’.
+
+--Step 2: add a name to the new repository.
+
+--Step 3: add a brief description of the project/code/repository.
+
+**Note: even though adding a description is optional, it is considered as best practice among the programmers’ community.
+
+--Step 4: specify if you want the new repository to be set on public or private mode. *We've been selecting private mode for class purposes. 
+
+--Step 5: initialize the repository with a README file.
+
+**Note: even though initializing the repository with a README is optional, it is considered as best practice among the programmers’ community too. README files usually contain a more in-depth description of the project, the environment used, dependencies required and outcomes.
+
+--Step 6: click ‘Create repository’.
+
+#Pushing Files to GitHub
+Whenever you make changes or updates to your files on your local machine and want to save them on your GitHub profile, you will want to push them to GitHub web.
+
+--Step 1: open the terminal and navigate to the directory where you would like to have the GitHub repository folder on your local machine.
+cd <directory>
+
+--Step 2: open the repository on GitHub, click the Code green button, copy the HTTPS link by clicking the clipboard button and type the following command on your terminal.
+ git clone <repository link>
+
+**Note: you might be asked to type in your GitHub email/username and password to link your terminal with your GitHub account. Please notice that when typing your password, you will not see it on the terminal, but is actually being written.
+
+--Step 3: navigate to the repository directory on your local machine.
+cd <repository name>
+
+--Step 4: now you can make changes to your files and codes on your local machine (e.g. add, delete, rename, copy, duplicate, reorganize, edit).
+
+--Step 5: once you are done making all changes to your files in your local machine, the next step consists in pushing the updated files back to GitHub.
+git add . 
+
+**Note: by typing the dot in the command line above, we are specifying to push everything within our folder. If you would like to push a specific subfolder or file, you have to specify it as below:
+git add <file/folder name>
+
+--Step 6: add a brief message specifying the changes or updates you worked on.
+git commit -m “<Message>”
+
+--Step 7: push files to GitHub.
+git push
+
+Pulling Files from GitHub
+To ensure that you are always working on the most updated versions of your files, you will want to pull them from GitHub before starting working on them.
+
+--Step 1: navigate to the repository directory on your local machine.
+cd <repository name>
+
+--Step 2: pull files from GitHub.
+git pull
