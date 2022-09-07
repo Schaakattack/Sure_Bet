@@ -1,0 +1,33 @@
+Useful GIT commands
+------------------------------------------------------------
+
+-- clone the remote git repo -- 
+git clone git@github.com:warp-9000/algo-trader.git
+
+-- I renamed the remote repo, use this command to fix your local repo --
+git remote set-url origin git@github.com:warp-9000/algo-trader.git
+
+-- this updates your local copy of the remote repo so they are in sync -- 
+    ** this WILL NOT cause merge conflicts **
+git fetch
+
+-- this updates your local copy of the remote repo AND your working repo --
+    ** this WILL cause merge conflicts **
+git pull
+
+-- see the status of the files in your local working repo --
+git status
+
+-- stage new / updated files for a commit --
+git add <file>
+
+-- commit any staged files --
+git commit
+git commit -m 'a_summary' -m 'a_detailed_description'
+
+-- publish your changes to the remote repo --
+git push 
+
+------------------------------------------------------------
+
+
