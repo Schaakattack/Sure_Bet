@@ -2,7 +2,7 @@ Useful GIT commands
 ------------------------------------------------------------
 
 -- clone the remote git repo -- 
-git clone git@github.com:warp-9000/algo-trader.git
+git clone https://github.com/Schaakattack/Sure_Bet.git
 
 -- I renamed the remote repo, use this command to fix your local repo --
 git remote set-url origin git@github.com:warp-9000/algo-trader.git
@@ -19,11 +19,11 @@ git pull
 git status
 
 -- stage new / updated files for a commit --
-git add <file>
+git add .
 
 -- commit any staged files --
 git commit
-git commit -m 'a_summary' -m 'a_detailed_description'
+git commit -m 'a_summary' -m 'a_message_description'
 
 -- publish your changes to the remote repo --
 git push 
