@@ -7,7 +7,7 @@ import plotly.express as px
 from PIL import Image
 
 # Load images
-nfl_logo = Image.open('images/NFL_logo.png')
+nfl_logo = Image.open('images/Logo.png')
 players = Image.open('images/players.jpg')
 
 # Read csv file with players data
@@ -34,7 +34,7 @@ st.sidebar.text_input("First Name")
 st.sidebar.text_input("Last Name")
 st.sidebar.text_input("Fantasy Team Name")
 st.sidebar.radio("Gender",options=["Male","Female","Other"])
-st.sidebar.number_input("Age",min_value=21, max_value=100, value=21, step=1)
+st.sidebar.number_input("Age",min_value=18, max_value=100, value=18, step=1)
 st.sidebar.selectbox("Favorite Team", options=["Arizona Cardinals",
 												"Atlanta Falcons",
 												"Baltimore Ravens",
@@ -70,7 +70,8 @@ st.sidebar.selectbox("Favorite Team", options=["Arizona Cardinals",
 
 # Instructions section
 st.header("Instructions")
-st.markdown("WRITE THE INSTRUCTIONS OF WHAT THIS APP DOES HERE")
+st.markdown("Select players position. Then specifiy what round you will be drafting in. Click the 'Get best player available' button. The result will provide you with the best player available for your fantasy team.")
+st.markdown("LETS GET STARTED")
 
 # Drafting section
 st.header("Place 'Sure' Bet!")
@@ -84,7 +85,7 @@ position = st.radio("Please select the player's position:", options=df["Position
 # Round select 
 round_ = st.number_input("Specify what round you are drafting in:",min_value=1, max_value=10, value=1, step=1)
 # Run button
-if st.button("Get best player available and his stats"):
+if st.button("Get best player available"):
 
 	# Filter dataframe with selected position only
 	df_sorted = df[df["Position"]==position].sort_values("FPTS", ascending=False)
