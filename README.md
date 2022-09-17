@@ -23,21 +23,21 @@ Jupyter Lab
 This project leverages python 3.7 with the following packages:
 
 ## Import and dependences
-import streamlit as st
-import pandas as pd
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
-import plotly.express as px
-from PIL import Image
+* import streamlit as st
+* import pandas as pd
+* from sklearn.cluster import KMeans
+* import matplotlib.pyplot as plt
+* import plotly.express as px
+* from PIL import Image
 ---
 
 ## Installation Guide
-pip streamlit 
-pip pillow
-pip sklearn.cluster
-pip matplotlib.pyplot
-pip pandas
-pip plotly
+* pip streamlit 
+* pip pillow
+* pip sklearn.cluster
+* pip matplotlib.pyplot
+* pip pandas
+* pip plotly
 
 ## Usage 
 
