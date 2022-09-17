@@ -15,18 +15,40 @@ Our team has built a machine learning model to evaluate key statistics of player
 ---
 
 ## Technologies
+Python 3.7
+Streamlit App
+VS Code
+Jupyter Lab
 
 This project leverages python 3.7 with the following packages:
 
+## Import and dependences
+* import streamlit as st
+* import pandas as pd
+* from sklearn.cluster import KMeans
+* import matplotlib.pyplot as plt
+* import plotly.express as px
+* from PIL import Image
 ---
 
 ## Installation Guide
-
----
+* pip streamlit 
+* pip pillow
+* pip sklearn.cluster
+* pip matplotlib.pyplot
+* pip pandas
+* pip plotly
 
 ## Usage 
 
-To use the Place Sure Bet application simply run the bot file in the terminal. The images below are some screenshots proving our results.
+To use the Place Sure Bet application from the file simply run <streamlit run app.py> in the command line *The recordings shows the command line prompt and running app:
+
+https://user-images.githubusercontent.com/105945472/190834878-66856d5a-f745-429a-9524-bf913fd71301.mp4
+
+
+
+https://user-images.githubusercontent.com/105945472/190834984-403dce59-b647-4ecd-9291-cfdd865f44b6.mp4
+
 
 ---
 

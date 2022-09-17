@@ -1,0 +1,6 @@
+pandas==0.24.2
+plotly==5.10.0
+streamlit==1.12.2
+pillow==9.2.0
+scikit-learn==1.0.2
+matplotlib==3.5.1
